@@ -1,0 +1,18 @@
+[
+    {
+        "transcript": "Please confirm your OTP to secure your bank account.",
+        "is_fraudulent": true
+    },
+    {
+        "transcript": "Your computer has a virus. Install AnyDesk to fix it.",
+        "is_fraudulent": true
+    },
+    {
+        "transcript": "This is your doctor calling about your appointment.",
+        "is_fraudulent": false
+    },
+    {
+        "transcript": "Your package delivery is delayed. Please update your address.",
+        "is_fraudulent": false
+    }
+]
