@@ -17,6 +17,48 @@ The project is divided into four main components:
 3. **Python Service**: Contains the Python ML/NLP service for processing audio transcripts and detecting fraud.
 4. **Server**: Contains the Express.js backend for handling user requests and storing feedback data.
 
+## Directory Structure
+```
+RealTimeFraudDetection/
+├── datasets/                   # Scam-related datasets
+│   └── data                    # Data files
+│       ├── dataset.json        # Example dataset
+│       ├── dataset.py          # Python script to load dataset
+│       └── transcripts.csv     # Transcripts of scam calls
+│
+├── frontend/                   # React Native or web app
+│   └── FraudDetectionApp/      # React Native app
+│       ├── App.tsx             # Main app file
+│       ├── package.json        # App dependencies
+│       └── src/                # App source code
+│           └── screens/        # App screens
+│   
+├── python-service/             # Python ML/NLP service
+│   ├── venv/                   # Python virtual environment
+│   ├── app.py                  # Main Flask app file
+│   ├── requirements.txt        # Python dependencies
+│   └── model/                  # Machine learning models
+│       ├── train_model.py      # Python script to train model
+│       ├── test_model.py       # Python script to test model
+│       └── requirements.txt    # Python dependencies
+│
+├── server/                     # Express.js backend
+│   ├── node_modules/           # Node.js dependencies
+│   ├── config/                 # Configuration files
+│       └── db.js               # MongoDB connection
+│   ├── controllers/            # Express controllers
+│       └── audio.js            # Audio processing controller
+│   ├── models/                 # MongoDB models
+│       └── feedback.js         # Feedback model
+│   ├── routes/                 # Express routes
+│       └── audio.js            # Audio processing routes
+│   ├── app.js                  # Main Express app file
+│   ├── package.json            # Node.js dependencies
+│   └── .env                    # Environment variables
+│   
+└── README.md                   # Project documentation
+```
+
 ## Getting Started
 To get started with the Real-Time Fraud Detection System, follow these steps:
 
