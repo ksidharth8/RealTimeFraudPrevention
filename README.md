@@ -4,20 +4,24 @@ This project aims to build an AI-powered real-time fraud detection system to pro
 For more information, please refer to [Pdf Preview](ProblemStatement.pdf)
 
 ## Tech Stack
-- **Frontend**: React Native (Android)
-- **Backend**: Node.js, Express.js, Flask
-- **Database**: MongoDB
-- **Machine Learning**: Python, TensorFlow, Keras
-- **Speech-to-Text**: OpenAI Whisper API
+
+-  **Frontend**: React Native (Android)
+-  **Backend**: Node.js, Express.js, Flask
+-  **Database**: MongoDB
+-  **Machine Learning**: Python, TensorFlow, Keras
+-  **Speech-to-Text**: OpenAI Whisper API
 
 ## Project Structure
+
 The project is divided into four main components:
+
 1. **Datasets**: Contains scam-related datasets for training the machine learning model.
 2. **Frontend**: Contains the React Native or web app for users to interact with the system.
 3. **Python Service**: Contains the Python ML/NLP service for processing audio transcripts and detecting fraud.
 4. **Server**: Contains the Express.js backend for handling user requests and storing feedback data.
 
 ## Directory Structure
+
 ```
 RealTimeFraudDetection/
 ├── datasets/                   # Scam-related datasets
@@ -32,7 +36,7 @@ RealTimeFraudDetection/
 │       ├── package.json        # App dependencies
 │       └── src/                # App source code
 │           └── screens/        # App screens
-│   
+│
 ├── python-service/             # Python ML/NLP service
 │   ├── venv/                   # Python virtual environment
 │   ├── app.py                  # Main Flask app file
@@ -55,75 +59,79 @@ RealTimeFraudDetection/
 │   ├── app.js                  # Main Express app file
 │   ├── package.json            # Node.js dependencies
 │   └── .env                    # Environment variables
-│   
+│
 └── README.md                   # Project documentation
 ```
 
 ## Getting Started
+
 To get started with the Real-Time Fraud Detection System, follow these steps:
 
 1. **Clone the Repository**: Clone the repository to your local machine:
-    ```bash
-    git clone https://github.com/ksidharth8/RealTimeFraudPrevention.git
-    ```
+   ```bash
+   git clone https://github.com/ksidharth8/RealTimeFraudPrevention.git
+   ```
 2. **Navigate to the Project Directory**: Change to the project directory:
-    ```bash
-    cd RealTimeFraudPrevention
-    ```
+   ```bash
+   cd RealTimeFraudPrevention
+   ```
 3. **Set Up Environment Variables**: Create a `.env` file (can take help with `.env.sample`) in the `server` directory and add the necessary environment variables.
 4. **Install Dependencies**: Install the required dependencies for each component:
-    - **Frontend**: Navigate to the `frontend/FraudDetectionApp` directory and run:
-        ```bash
-        cd frontend/FraudDetectionApp
-        npm install
-        ```
-    - **Python Service**: Navigate to the `python-service` directory, create and activate a virtual environment, and install the dependencies:
-        ```bash
-        cd python-service
-        python -m venv venv
-        source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-        pip install -r requirements.txt
-        ```
-    - **Server**: Navigate to the `server` directory and run:
-        ```bash
-        cd server
-        npm install
-        ```
+   -  **Frontend**: Navigate to the `frontend/FraudDetectionApp` directory and run:
+      ```bash
+      cd frontend/FraudDetectionApp
+      npm install
+      ```
+   -  **Python Service**: Navigate to the `python-service` directory, create and activate a virtual environment, and install the dependencies:
+      ```bash
+      cd python-service
+      python -m venv venv
+      source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+      pip install -r requirements.txt
+      ```
+   -  **Server**: Navigate to the `server` directory and run:
+      ```bash
+      cd server
+      npm install
+      ```
 5. **Train the Model**: Navigate to the `python-service/model` directory and run:
-    ```bash
-    cd python-service/model
-    python train_model.py
-    ```
+   ```bash
+   cd python-service/model
+   python train_model.py
+   ```
 6. **Start the Services**: Start each service in separate terminal windows:
-    - **Frontend**: Navigate to the `frontend/FraudDetectionApp` directory and run:
-        ```bash
-        cd frontend/FraudDetectionApp
-        npm run android
-        ```
-    - **Python Service**: Navigate to the `python-service` directory and run:
-        ```bash
-        cd python-service
-        python app.py
-        ```
-    - **Server**: Navigate to the `server` directory and run:
-        ```bash
-        cd server
-        node app.js
-        ```
+   -  **Frontend**: Navigate to the `frontend/FraudDetectionApp` directory and run:
+      ```bash
+      cd frontend/FraudDetectionApp
+      npm run android
+      ```
+   -  **Python Service**: Navigate to the `python-service` directory and run:
+      ```bash
+      cd python-service
+      python app.py
+      ```
+   -  **Server**: Navigate to the `server` directory and run:
+      ```bash
+      cd server
+      node app.js
+      ```
 7. **Access the Application**: Access the frontend app on your Android device or emulator.
 
 Once you have completed these steps, you should have the Real-Time Fraud Detection System up and running on your local machine.
 
 ## Deployment
+
 The frontend will be served as an Android app. Follow the instructions in the "Getting Started" section to set up and run the app on an Android device or emulator.
 
 ## How to Run
+
 1. **Install Dependencies**: Install the required dependencies for the frontend, Python service, and server.
 2. **Train Model**: Train the machine learning model using the scam-related datasets.
 3. **Start Services**: Start the Python service, server, and frontend app.
 4. **Test System**: Test the system by making a request to the server and receiving a response from the machine learning model.
 
 ## How to Use
+
 1. **User Registration**: Users can register for an account using their phone number and email address.
 2. **Audio Transcription**: Users can upload an audio file of a scam call to the system.
 3. **Fraud Detection**: The system will analyze the audio transcript and detect fraudulent behavior.
@@ -131,31 +139,36 @@ The frontend will be served as an Android app. Follow the instructions in the "G
 5. **Scam Reporting**: Users can report scam calls to help improve the model and protect other users.
 
 ## Future Work
-- **Improve Model Accuracy**: Train the machine learning model on more scam-related datasets to improve accuracy.
-- **Enhance User Experience**: Add more features to the frontend app, such as real-time notifications and scam alerts.
-- **Scale System**: Deploy the system on a cloud platform to handle a large number of users and requests.
-- **Integrate with Phone Apps**: Integrate the system with phone apps to automatically detect scam calls and block them.
+
+-  **Improve Model Accuracy**: Train the machine learning model on more scam-related datasets to improve accuracy.
+-  **Enhance User Experience**: Add more features to the frontend app, such as real-time notifications and scam alerts.
+-  **Scale System**: Deploy the system on a cloud platform to handle a large number of users and requests.
+-  **Integrate with Phone Apps**: Integrate the system with phone apps to automatically detect scam calls and block them.
 
 ## License
+
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
-- [OpenAI](https://www.openai.com/)
-- [TensorFlow](https://www.tensorflow.org/)
-- [MongoDB](https://www.mongodb.com/)
-- [React Native](https://reactnative.dev/)
-- [Node.js](https://nodejs.org/)
-- [Express.js](https://expressjs.com/)
-- [Flask](https://flask.palletsprojects.com/)
-- [Python](https://www.python.org/)
-- [Icons8](https://icons8.com/)
+
+-  [OpenAI](https://www.openai.com/)
+-  [TensorFlow](https://www.tensorflow.org/)
+-  [MongoDB](https://www.mongodb.com/)
+-  [React Native](https://reactnative.dev/)
+-  [Node.js](https://nodejs.org/)
+-  [Express.js](https://expressjs.com/)
+-  [Flask](https://flask.palletsprojects.com/)
+-  [Python](https://www.python.org/)
+-  [Icons8](https://icons8.com/)
 
 ## Contributors
-- [Kumar Sidharth](https://github.com/ksidharth8 )
-- [Nischay Mishra](https://github.com/NishV72005)
-- [Rishit Aryan](https://github.com/aryanrishit)
+
+-  [Kumar Sidharth](https://github.com/ksidharth8)
+-  [Nischay Mishra](https://github.com/NishV72005)
+-  [Rishit Aryan](https://github.com/aryanrishit)
 
 ## How to Contribute
+
 1. Fork the repository
 2. Create a new branch (`git checkout -b feature`)
 3. Make changes and commit them (`git commit -am 'Add new feature'`)
@@ -163,19 +176,22 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 5. Create a new pull request
 
 ## Support or Contact
+
 For support, please contact the project maintainers Kumar Sidharth, Nischay Mishra, and Rishit Aryan.
 
 Kumar Sidharth - [@Ksidharth88](https://twitter.com/Ksidharth88) - [kumarsidharth333@gmail.com](mailto:kumarsidharth333@gmail.com)
 Project Link: [https://github.com/ksidharth8/RealTimeFraudPrevention](https://github.com/ksidharth8/RealTimeFraudPrevention)
 
 ## References
-- [Real-Time Fraud Detection Using Machine Learning](https://www.researchgate.net/publication/344073073_Real-Time_Fraud_Detection_Using_Machine_Learning)
-- [Machine Learning for Fraud Detection](https://www.sciencedirect.com/science/article/pii/S221201731930091X)
-- [Fraud Detection Using Machine Learning](https://www.researchgate.net/publication/344073073_Real-Time_Fraud_Detection_Using_Machine_Learning)
-- [Real-Time Fraud Detection System](https://www.researchgate.net/publication/344073073_Real-Time_Fraud_Detection_Using_Machine_Learning)
-- [Machine Learning Models for Fraud Detection](https://www.sciencedirect.com/science/article/pii/S221201731930091X)
+
+-  [Real-Time Fraud Detection Using Machine Learning](https://www.researchgate.net/publication/344073073_Real-Time_Fraud_Detection_Using_Machine_Learning)
+-  [Machine Learning for Fraud Detection](https://www.sciencedirect.com/science/article/pii/S221201731930091X)
+-  [Fraud Detection Using Machine Learning](https://www.researchgate.net/publication/344073073_Real-Time_Fraud_Detection_Using_Machine_Learning)
+-  [Real-Time Fraud Detection System](https://www.researchgate.net/publication/344073073_Real-Time_Fraud_Detection_Using_Machine_Learning)
+-  [Machine Learning Models for Fraud Detection](https://www.sciencedirect.com/science/article/pii/S221201731930091X)
 
 ## Disclaimer
+
 This project is for educational purposes only and should not be used for any illegal activities. The project maintainers are not responsible for any misuse of the system by users.
 
 🚀 Happy Coding! 🎉
