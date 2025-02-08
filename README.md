@@ -138,6 +138,45 @@ The frontend will be served as an Android app. Follow the instructions in the "G
 4. **Feedback Mechanism**: Users can provide feedback on the accuracy of the fraud detection model.
 5. **Scam Reporting**: Users can report scam calls to help improve the model and protect other users.
 
+## Testing
+
+To test the Real-Time Fraud Detection System, follow these steps:
+
+### Backend Testing
+For testing the backend, you can use tools like Postman to make requests to the server and check the responses:
+1. Start the server by running `npm run dev` in the `server` directory.
+2. Go to following URL for the public Workspace of Postman:
+   [![Run in Postman](https://run.pstmn.io/button.svg)](https://www.postman.com/material-operator-85503474/workspace/realtimefraudprevention)
+3. Click on the "Run in Postman" button to import the collection.
+4. Run the requests in the collection to test the backend API.
+5. Check the responses to ensure that the system is working correctly.
+
+### Frontend Testing
+For testing the frontend, you can use the React Native app to interact with the system:
+1. Start the frontend app by running `npm run android` in the `frontend/FraudDetectionApp` directory.
+2. Use the app to register for an account, upload an audio file, and provide feedback on the fraud detection model.
+3. Check the app for any errors or issues while using the system.
+
+### Python Service Testing (Machine Learning Model)
+For testing the Python service, you can use the test script to evaluate the machine learning model:
+1. Navigate to the `python-service/model` directory.
+2. Ensure that the model has been trained by running `python train_model.py`.
+3. Run the test script to evaluate the model:
+   ```bash
+   python test_model.py
+   ```
+4. Check the output to see the accuracy of the model.
+
+## Troubleshooting
+
+If you encounter any issues while setting up or running the Real-Time Fraud Detection System, please follow these steps:
+
+1. **Check Dependencies**: Make sure that all the dependencies for the frontend, Python service, and server have been installed.
+2. **Environment Variables**: Check that the environment variables in the `.env` file are correct.
+3. **Training Model**: Ensure that the machine learning model has been trained successfully.
+4. **Start Services**: Start each service in separate terminal windows and check for any error messages.
+5. **Test System**: Test the system by making a request to the server and checking the response from the machine learning model.
+
 ## Future Work
 
 -  **Improve Model Accuracy**: Train the machine learning model on more scam-related datasets to improve accuracy.
