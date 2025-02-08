@@ -47,7 +47,7 @@ def main():
     """
     model, vectorizer = load_model()
     # transcript = "Please confirm your OTP to secure your bank account."
-    transcript = "Your ticket has been booked. Check your email for details."
+    transcript = "This is your doctor calling about your appointment."
     prediction = predict_fraud(transcript, model, vectorizer)
     print(f"Prediction: {prediction}")
 

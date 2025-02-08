@@ -32,8 +32,8 @@ nlp = spacy.load("en_core_web_sm")
 model = whisper.load_model("base")
 
 # Load the trained fraud detection model and vectorizer
-model_fraud = joblib.load("fraud_detection_model.pkl")
-vectorizer = joblib.load("tfidf_vectorizer.pkl")  # Load the vectorizer
+model_fraud = joblib.load("./model/fraud_detection_model.pkl")
+vectorizer = joblib.load("./model/tfidf_vectorizer.pkl")  # Load the vectorizer
 
 # Set a max file size limit (in MB)
 MAX_AUDIO_SIZE_MB = 5
